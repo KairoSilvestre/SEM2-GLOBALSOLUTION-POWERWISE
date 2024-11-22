@@ -1,23 +1,30 @@
 import Header from "./Components/Header";
 import { Outlet } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 function App() {
-    return ( 
+
+    const [userData, setUserData] = useState(null);
+
+    // Busca os dados do usuário no LocalStorage ao carregar o app
+    useEffect(() => {
+        const savedData = JSON.parse(localStorage.getItem("userData"));
+        if (savedData) {
+            setUserData(savedData);
+        }
+    }, []);
+
+    const handleUserDataSubmit = (data) => {
+        setUserData(data);
+        localStorage.setItem("UserData", JSON.stringify(data));
+    }
+
+    return (
         <>
-            <Header/>
-            <Outlet/>
+            <Header userData={userData}/>
+            <Outlet context={{ userData, handleUserDataSubmit }}/>
         </>
     );
 }
 
 export default App;
-
-
-        // <Router>
-        //     <Header/>
-        //     <Routes>
-        //         <Route path="/ecodicas" element={<Home/>}/>
-        //         <Route path="/main" element={<Main/>}/>
-        //         <Route path="/quiz" element={<Quiz/>}/>
-        //     </Routes>
-        // </Router>
