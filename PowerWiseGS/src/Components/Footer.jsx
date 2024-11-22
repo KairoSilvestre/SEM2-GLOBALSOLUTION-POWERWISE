@@ -11,8 +11,8 @@ function Footer() {
                         </p>
                     </div>
                 <div className="flex space-x-6">
-                    <a href="https://www.facebook.com" target="_blank"><img className="w-8" src="/public/Imagens/imagens-footer/Facebook.png"/></a>
-                    <a href="https://www.instagram.com" target="_blank"><img className="w-8" src="/public/Imagens/imagens-footer/Instagram.png"/></a>
+                    <a href="https://www.facebook.com" target="_blank"><img className="w-8" src="/Imagens/imagens-footer/Facebook.png"/></a>
+                    <a href="https://www.instagram.com" target="_blank"><img className="w-8" src="/Imagens/imagens-footer/Instagram.png"/></a>
                     <a href="https://www.tiktok.com" target="_blank"><img className="w-8" src="/Imagens/imagens-footer/TikTok.png"/></a>
                 </div>
                 </div>
