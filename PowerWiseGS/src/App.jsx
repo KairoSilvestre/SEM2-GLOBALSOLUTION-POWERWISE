@@ -1,6 +1,7 @@
 import Header from "./Components/Header";
 import { Outlet } from "react-router-dom";
 import { useState, useEffect } from "react";
+import Footer from "./Components/Footer";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <>
             <Header userData={userData}/>
             <Outlet context={{ userData, handleUserDataSubmit }}/>
+            <Footer/>
         </>
     );
 }

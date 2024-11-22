@@ -8,6 +8,7 @@ import Quiz from './pages/Quiz.jsx'
 import EcoDicas from './pages/EcoDicas.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Energias from './pages/Energias.jsx'
+import EcoWise from './pages/EcoWise.jsx'
 
 const router = createBrowserRouter([{
   path:'/',
@@ -17,6 +18,7 @@ const router = createBrowserRouter([{
     {path:'/sobre', element:<Sobre/>},
     {path:'/quiz', element:<Quiz/>},
     {path:'/ecodicas', element:<EcoDicas/>},
+    {path:'/ecowise', element:<EcoWise/>},
     {path:'/ecodicas/:nome', element:<Energias/>}
   ]
 }])

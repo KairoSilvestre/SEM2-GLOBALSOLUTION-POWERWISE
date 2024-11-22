@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
-import EasterEggs from "./EasterEggs";
 
 function Home() {
 

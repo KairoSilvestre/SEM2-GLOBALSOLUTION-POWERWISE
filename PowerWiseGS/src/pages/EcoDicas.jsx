@@ -1,4 +1,3 @@
-
 import CardDicas from "../Components/CardDicas";
 
 function EcoDicas() {
