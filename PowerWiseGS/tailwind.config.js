@@ -7,8 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Roboto" , "sans-serif"],
-      }
+        alice: ['Alice', 'serif'],
+        dmserif: ['DM Serif Text', 'serif'],
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],

@@ -1,13 +1,23 @@
 import Header from "./Components/Header";
-import Main from "./Components/Main";
+import { Outlet } from "react-router-dom";
 
 function App() {
     return ( 
-        <h1>
+        <>
             <Header/>
-            <Main/>
-        </h1>
+            <Outlet/>
+        </>
     );
 }
 
 export default App;
+
+
+        // <Router>
+        //     <Header/>
+        //     <Routes>
+        //         <Route path="/ecodicas" element={<Home/>}/>
+        //         <Route path="/main" element={<Main/>}/>
+        //         <Route path="/quiz" element={<Quiz/>}/>
+        //     </Routes>
+        // </Router>

@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .titulo-teste{
+        color: red;
+        font-size: 32px;
+    }
+}
